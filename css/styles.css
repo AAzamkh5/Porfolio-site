@@ -19,6 +19,7 @@ body{
 .navbar {
   padding: 0 0 4.5rem;
   position: sticky;
+ 
 
 }
 
@@ -54,9 +55,10 @@ body{
   margin:10px ;
   font-weight: bold;
 }
+/* =------------------------About me=------------------- */
 
 #about-me{
-  height: 100vh;
+  height: 110vh;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/image2.jpeg');
 background-position:center top;
 background-size: cover;
@@ -72,67 +74,92 @@ background-attachment: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
   background: hsla(45, 6%, 87%, 0.151);
-  
-  
-   
+    
 }
+
 
 .profile p{
   color: #fff;
-  margin:10px ;line-height: 2;
+  margin:10px ;
   font-style: italic;
+  line-height:3;
+  font-weight: normal;
+  
+}
+@media(max-width:768px){
+  .profile p{
+    line-height: 1.2;
+    
 
-  
-  
-  
+  }
 }
 
 
-.resume{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #000;
-  background:#fff;
-}
-.intro p{
-  font-size: 1.2rem;
-}
+
+
 
 
 /* -----------------grid Site Image and text------------ */
 
 
+.work-title{
+ 
+  top:80%;
+ left:45%;
+ transform: translate(-45%,120%);
+ position: absolute;
+ background: #dfdedb41;
+ padding: 20px; 
+ width: 100%;
+ justify-content: center;
+text-align: center;
+ 
 
+ 
+}
+
+.work-title h1{
+ color: #fff;
+ margin:10px ;
+ font-weight: bold;
+}
+.work-title h1, p{
+ color: #fff;
+ margin:10px ;
+ font-weight: bold;
+}
 
 
 /* ----------------text over image ---------- */
 .work-container{
-  
-  
-padding-top: 50px;
+ padding-top: 200px;
   display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
 
   grid-auto-rows: 400px;
   grid-gap: 20px;
   
 }
 
+
 .text-work{
  
 color: ivory;
+padding: 2em;
 
 }
 
 .drum{
  
 color: ivory;
+padding: 2em;
 
 }
 
 .todo{
   
 color: ivory;
+padding: 2em;
 
 }
 
@@ -142,18 +169,37 @@ color: ivory;
   position: relative;
   width: 30%;
   border-radius: 20px;
+  padding: 2em;
  
   
 }
 
-.img{
+.wrappe img{
   opacity: 1;
+   background-size: 100%;
+  transition: .8s ease;
   
-  background-size: 100%;
-  transition: .5s ease;
-  image-rendering: auto;
-  
+  width: 500px;
+  height: 300px; 
+  border-radius: 15px;
+  border: 5px solid;
+  border-color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+  
+
+  
+
+#work-container h1{
+  font-size: 3rem;
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .content {
   position: absolute;
  top:45%;
@@ -172,9 +218,9 @@ color: ivory;
  text-decoration: none;
  color: #000;
 font-size: 15px;
-display: block;
+display: inline-block;
 background-color: #fff;
-text-align: center;
+text-align:center;
 padding: 10px;
 cursor: pointer;
 border-radius: 20px;
@@ -205,77 +251,8 @@ color: #fff;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* .textOverImage{
-  position: relative;
-  height: 300px;
-  width: 300px;
-  float: left;
-  margin: 4px;
-  background-size: 100%;
-  transition: 0.5s;
-}
-.textOverImage:hover{
-  background-size: 105%;
-  background-position:center;
-  
-}
-.textOverImage:after{
-  content: attr(data-text);
-  position: absolute;
-  top:100%;
-  bottom: 0;
-  left:0;
-  right:0;
-  background-color:rgb(0,0,0,0.5);
-  color:#fff;
-  padding: 0 10px;
-  text-align: center;
-  word-wrap: break-word;
-  opacity: 1;
-  transition: 0.4s;
-  overflow: hidden;
-  content: attr(data-text);
-}
-
-    .textOverImage:hover:after{
-      opacity: 1;
-      top:0;
-      padding:8px
-    }
-    .textOverImage:first-line{
-      color:#fff;
-      font-weight: 2;
-      font-size: 1.5rem;
-    } */
-      
-   
-    
-    
-    
-    
-
-   
    
 
- 
-    
-    
-  
-  
-
- 
-  
 /* ---------------------end flip card---------- */
 #education{
   height: 100vh;
@@ -286,13 +263,14 @@ position: relative;
 background-attachment: fixed;
 
 }
-.col-md-6{
+.edu{
   padding: 30px;
   top:50%;
-  left:50%;
+  left:60%;
   transform: translate(-90%,-50%);
   position: absolute;
   background: #dfdedb41;
+  width: 60%;
   
 }
 
@@ -309,7 +287,7 @@ position: relative;
   display: inline-block;
   position: absolute;
   left:29px;
-  width: 2px;
+  /* width: 2px; */
   height: 100%;
   z-index: 1;
 }
@@ -356,18 +334,36 @@ position: relative;
   color: #e0dfbf;
 
 }
+@media(max-width:768px){
+  .project:before{
+    position: absolute;
+    
+    padding: 3px;
+  }
+  .edu{
+    padding: 5px;
+    width: 60%;
+    
+  }
+}
+
+/* --------get in Touch----------------- */
  #contact{
-  height: 100vh;
+  height: 110vh;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/contact.jpg');
   background-size: cover;
-  background-attachment: fixed;
+   position: relative;
   text-align: center;
+  justify-content: center;
+  
   
 }
 .contact-container{
-  left:80px;
-  padding: 30px;
-  transform: translate(1%,50%);
+  left:55px;
+  padding: 70px;
+  top: 120px;
+ 
+
   position: absolute;
   color: #fff;
 
@@ -379,26 +375,23 @@ position: relative;
 .contact-detail{
  display: flex;
  flex-direction: row;
+
  align-items: center;
  justify-content: center;
  margin-right: 20px;
- 
- 
+
  
 }
-@media(max-width:800px){
-  .contact-detail{
-    flex-direction: column;
-  }
-}
+
+
+
 
 .tel, .email, .git{
-
-
   margin: 3rem; 
-  justify-content: space-around;
   width: 230px;
 }
+
+
 .contact .fa{
   
   font-size: 40px;
@@ -419,10 +412,37 @@ position: relative;
   color: #e0dfbf;
 }
 
+@media(max-width:768px){
 
+  .tel, .email, .git{
+    margin: 1.2rem; 
+    width: 200px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .contact-container{
+    left:100px;
+    top: 80px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .contact-detail{
+    
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+   }
+   
+}
+
+/* ==============footer================= */
+.footer{
+  color: #f1f1f1;
+}
 .social-links{
   padding :20px;
   text-align: center;
+  
 }
 
 
