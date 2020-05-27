@@ -7,36 +7,33 @@ body{
   font-family:sans-serif;
   background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/background.jpg');
 }
-
-#header{
-  height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/Image-1.jpg');
-  background-position:center top;
-  background-size: cover;
-  background-attachment: fixed;
-}
-/* ------------nav-------- */
+/* ---------------------nav------------------------ */
 .navbar {
-  padding: 0 0 4.5rem;
-  position: sticky;
  
 
 }
 
-
+.navbar-brand {
+  padding: 10px;
+}
 
 .nav-item {
   padding: 0 18px;
 }
 
 .nav-link {
-  margin:12px;
-  font-size: 1rem;
-  font-family: "sans-serif"
+  font-size: 1.2rem;
+  font-family: "sans-serif";
+}
+/* ------------------------------nav end---------------------- */
+.header{
+  height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/Image-1.jpg');
+  background-position:center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
-/* ----------------nav end */
 .user-box{
   top:50%;
   left:50%;
@@ -123,16 +120,18 @@ text-align: center;
  margin:10px ;
  font-weight: bold;
 }
-.work-title h1, p{
+.work-title  p{
  color: #fff;
  margin:10px ;
- font-weight: bold;
+ font-weight: none;
+ color:#0088a9;
+ font-style: italic;
 }
 
 
 /* ----------------text over image ---------- */
 .work-container{
- padding-top: 200px;
+ padding-top: 300px;
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
 
@@ -142,26 +141,16 @@ text-align: center;
 }
 
 
-.text-work{
+.text-work, .drum, .todo{
  
-color: ivory;
+color:#f1f1f1;
 padding: 2em;
+letter-spacing: 5px;
+
 
 }
 
-.drum{
- 
-color: ivory;
-padding: 2em;
 
-}
-
-.todo{
-  
-color: ivory;
-padding: 2em;
-
-}
 
 
 .wrappe{
@@ -170,6 +159,7 @@ padding: 2em;
   width: 30%;
   border-radius: 20px;
   padding: 2em;
+  text-align: center;
  
   
 }
@@ -177,7 +167,7 @@ padding: 2em;
 .wrappe img{
   opacity: 1;
    background-size: 100%;
-  transition: .8s ease;
+  transition: .5s ease;
   
   width: 500px;
   height: 300px; 
@@ -198,6 +188,7 @@ padding: 2em;
   text-align: center;
   align-items: center;
   justify-content: center;
+  
 }
 
 .content {
@@ -208,12 +199,27 @@ padding: 2em;
   -ms-transform: translate(-50%,-50%);
   text-transform: uppercase;
   font-size: 17px;
-  color: #fff;
+  text-align: center;
+  align-items: center;
+
   white-space: nowrap;
   overflow: hidden;
   
 
 }
+.content h2{
+  font-weight: 2;
+  font-style: italic;
+
+}
+.content p{
+font-weight: none;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:#0088a9;
+font-size: 1.4rem;
+
+}
+
 .content a{
  text-decoration: none;
  color: #000;
@@ -221,16 +227,15 @@ font-size: 15px;
 display: inline-block;
 background-color: #fff;
 text-align:center;
-padding: 10px;
+ padding: 7px; 
 cursor: pointer;
-border-radius: 20px;
+border-radius: 5px;
 
 }
 .content:hover a{
   text-decoration: none;
-  
-  
-  color: #808080;
+  color: #fff;
+  background-color: dimgrey;
   
 }
 .overlay{
@@ -238,14 +243,11 @@ border-radius: 20px;
 }
 
 .wrappe:hover img {
-opacity: .3;
+opacity: .5;
 color: #fff;
-
-
-
 }
 .wrappe:hover .overlay{
-  opacity: 1;
+  opacity: 2;
   
 }
 
