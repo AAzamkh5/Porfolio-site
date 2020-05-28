@@ -5,30 +5,37 @@ body{
   padding: 0;
   text-decoration: none;
   font-family:sans-serif;
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('Images/background.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(../Images/background.jpg);
 }
 /* ---------------------nav------------------------ */
 
-
 .navbar-brand {
-  padding: 10px;
+  padding: 20px;
 }
 
 .nav-item {
   padding: 0 18px;
+  margin-top: 15px;
+  padding-top: 10px;
 }
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "sans-serif";
+  font-family: monospace "sans-serif";
+  letter-spacing: 3px;
+  
+  
+  
+  
 }
 /* ------------------------------nav end---------------------- */
 .header{
   height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/Image-1.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../Images/Image-1.jpg);
   background-position:center top;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 .user-box{
@@ -53,7 +60,7 @@ body{
 
 #about-me{
   height: 110vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/image2.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../Images/image2.jpeg);
 background-position:center top;
 background-size: cover;
 position: relative;
@@ -259,7 +266,7 @@ margin-top: 100px;
 /* ---------------------end flip card---------- */
 #education{
   height: 100vh;
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('Images/edu.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(../Images/edu.jpeg);
 background-position:center left;
 background-size:cover;
 position: relative;
@@ -353,7 +360,7 @@ position: relative;
 /* --------get in Touch----------------- */
  #contact{
   height: 110vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/contact.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../Images/contact.jpg);
   background-size: cover;
    position: relative;
   text-align: center;
