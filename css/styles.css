@@ -5,13 +5,10 @@ body{
   padding: 0;
   text-decoration: none;
   font-family:sans-serif;
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/background.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('Images/background.jpg');
 }
 /* ---------------------nav------------------------ */
-.navbar {
- 
 
-}
 
 .navbar-brand {
   padding: 10px;
@@ -28,7 +25,7 @@ body{
 /* ------------------------------nav end---------------------- */
 .header{
   height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/Image-1.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/Image-1.jpg');
   background-position:center top;
   background-size: cover;
   background-attachment: fixed;
@@ -56,7 +53,7 @@ body{
 
 #about-me{
   height: 110vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/image2.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/image2.jpeg');
 background-position:center top;
 background-size: cover;
 position: relative;
@@ -124,7 +121,7 @@ text-align: center;
  color: #fff;
  margin:10px ;
  font-weight: none;
- color:#0088a9;
+ color:#800000;
  font-style: italic;
 }
 
@@ -156,7 +153,7 @@ letter-spacing: 5px;
 .wrappe{
   font-family: sans-serif;
   position: relative;
-  width: 30%;
+  width: 100%;
   border-radius: 20px;
   padding: 2em;
   text-align: center;
@@ -193,8 +190,8 @@ letter-spacing: 5px;
 
 .content {
   position: absolute;
- top:45%;
- left:135%;
+ top:70%;
+ left:50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   text-transform: uppercase;
@@ -213,29 +210,31 @@ letter-spacing: 5px;
 
 }
 .content p{
-font-weight: none;
+font-weight: 900;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color:#0088a9;
+color:#800000;
 font-size: 1.4rem;
 
 }
 
 .content a{
+  width: 100%;
  text-decoration: none;
- color: #000;
-font-size: 15px;
+ color: #fff;
+font-size: 18px;
 display: inline-block;
-background-color: #fff;
+background-color: #800000;
 text-align:center;
  padding: 7px; 
 cursor: pointer;
 border-radius: 5px;
+margin-top: 100px;
 
 }
 .content:hover a{
   text-decoration: none;
   color: #fff;
-  background-color: dimgrey;
+  background-color: #923737;
   
 }
 .overlay{
@@ -243,11 +242,13 @@ border-radius: 5px;
 }
 
 .wrappe:hover img {
-opacity: .5;
-color: #fff;
+  opacity: .2;
+  background-size: 150%;
+
 }
 .wrappe:hover .overlay{
   opacity: 2;
+  
   
 }
 
@@ -258,7 +259,7 @@ color: #fff;
 /* ---------------------end flip card---------- */
 #education{
   height: 100vh;
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/edu.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('Images/edu.jpeg');
 background-position:center left;
 background-size:cover;
 position: relative;
@@ -352,7 +353,7 @@ position: relative;
 /* --------get in Touch----------------- */
  #contact{
   height: 110vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/Users/sidrahkhan/Desktop/web development/porfolio-site/Images/contact.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/contact.jpg');
   background-size: cover;
    position: relative;
   text-align: center;
@@ -377,9 +378,13 @@ position: relative;
 .contact-detail{
  display: flex;
  flex-direction: row;
+ flex-wrap: nowrap;
+ overflow: hidden;
+ text-align: center;
+
 
  align-items: center;
- justify-content: center;
+ justify-content: space-evenly;
  margin-right: 20px;
 
  
