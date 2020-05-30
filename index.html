@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
     <title>Resume Website</title>
       <link rel="stylesheet" href="css/styles.css">
       <link rel="icon" href="favicon.ico">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
       <link href="https://fonts.googleapis.com/css?family=Chilanka|Dancing+Script|News+Cycle|Pacifico&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/0c4dc44c2f.js" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -15,71 +16,157 @@
   <body>
 
 
-    <div class="header" id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+ 
+  
+<header>
+  <img  src="images/logo.png"  class="logo" alt="logo"/>
 
-      <a class="navbar-brand" src="" href="">
-        <img src="images/logo.png" style="height: 40px;width: 40px;border-radius: 50px;margin-top: 5px;"/>
-      </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+     
+     <nav class="navbar">
+       <ul>
+       
+        <li >
+          <a  href="#about-me">ABOUT</a>
+        </li>
+        <li >
+          <a  href="#education">EDUCATION</a>
+        </li>
+        <li >
+          <a  href="#contact">CONTACT</a>
+        </li>
+       </ul>
+     </nav>
+    </header>
+    
+     <section class="home-hero">
+       <div class="container">
+        <h1 class="title">Hi.I'm Azam,
+        <span>a freelance web designer & developer. </span></h1>
+     
+        <a href="#work" class="button button-accent">see my work</a>
+        </div>
+     </section>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#work-container">WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">EDUCATION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
-          </li>
 
-        </ul>
 
-      </div>
-    </nav>
+<section class="home-about">
+  <div class="container">
+  <div class="home-about-textbox">
+    <h1>Who Am I</h1>
+    <p> A self taught web developer learned to code while working a regular job, freelance modeling and taking care of family.Passionate web designer, skilled in HTML, CSS, JAVASCRIPT, NODEJS, REACTSJS Creates seamless UX and UI with creative but functional designs.</p>
+    <p>I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time. I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.</p>
+  </div>
+</div>
+ 
+  
+  
+</section>
+
+
+
+<section class="porfolio">
+
+
+  <h1>SOME OF MY WORK</h1>
+
+  <!-- portfolio item 1-------- -->
+
+ <figure class="port-item">
+   <img src="images/portfolio-1.png" alt="portfolio">
+   <figcaption class="port-desc">
+     <p>TING-DOG<span>HTML/CSS</span></p>
+     <a href="https://aazamkh5.github.io/TING-DOG/" class="button button-accent button-small">VIEW SITE</a>
+   </figcaption>
+ </figure>
+
+ <!-- portfolio item 2-------- -->
+
+ <figure class="port-item">
+  <img src="images/portfolio-2.jpg" alt="portfolio">
+  <figcaption class="port-desc">
+    <p>Drum Kit<span>JAVASCRIPT/JQUERY</span></p>
+    <a href="https://aazamkh5.github.io/drum-kit/."class="button button-accent button-small">VIEW SITE</a>
+  </figcaption>
+</figure>
+
+ <!-- portfolio item 3-------- -->
+
+ <figure class="port-item">
+  <img src="images/portfolio-3.jpg" alt="portfolio">
+  <figcaption class="port-desc">
+    <p>TODOs <span>JAVASCRIPT/REACTJS</span></p>
+    <a href="https://pedantic-hypatia-cd4f53.netlify.app/"  class="button button-accent button-small">VIEW SITE</a>
+  </figcaption>
+</figure>
+
+ <!-- portfolio item 4-------- -->
+
+ <figure class="port-item">
+  <img src="images/portfolio-4.jpg" alt="portfolio">
+  <figcaption class="port-desc">
+    <p>Drum Kit<span>JAVASCRIPT/JQUERY</span></p>
+    <a href="" class="button button-accent button-small">VIEW SITE</a>
+  </figcaption>
+</figure>
+
+ <!-- portfolio item 5-------- -->
+
+ <figure class="port-item">
+  <img src="images/portfolio-5.jpg" alt="portfolio">
+  <figcaption class="port-desc">
+    <p>Drum Kit<span>JAVASCRIPT/JQUERY</span></p>
+    <a href="" class="button button-accent button-small">VIEW SITE</a>
+  </figcaption>
+</figure>
+
+ <!-- portfolio item 6-------- -->
+
+ <figure class="port-item">
+  <img src="images/portfolio-6.jpg" alt="portfolio">
+  <figcaption class="port-desc">
+    <p>Drum Kit<span>JAVASCRIPT/JQUERY</span></p>
+    <a href="" class="button button-accent button-small">VIEW SITE</a>
+  </figcaption>
+</figure>
+
+
+</section>
+      
+
+       
+          
+
+        
+
+      
 
 
  <!------------------ ------header----------------------------------- -->
      
         
  
- <div class="container text-center">
-      <div class="user-box">
-        
-        <h1>Hi.I'm Azam,</h1>
-        <p>a freelance web designer & developer. </p>
-      </div>
-       </div>
-   
-      </div>
+
   
 
 <!-- --------------------work------------------------------ -->
  
-      <div class="work-title ">
+      <!-- <div class="work-title ">
         
         <h1>My Work</h1>
         <p>"The <strong>Expert</strong> in Anything was Once a <strong>Beginner</strong> "</p>
         <hr style="width: 7%;"></hr>
-      </div>
+      </div> -->
       
 
 
 
-<div class="work-container" id="work-container">
+<!-- <div class="work-container" id="work-container">
 
   
   <div class="wrappe b-1">
-    <img src="images/tingdog.jpeg">
+   
     <div class="overlay">
       <div class="content">
         <h2>TING DOG </h2>
@@ -97,23 +184,23 @@
   </div>
 
     <div class="wrappe b-2"  >
-      <img src="images/drumkit.png"  >
+     
     <div class="overlay">
       <div class="content">
         <h2>DRUM KIT </h2>
         <p>Javascript/jquery</p>
-        <a href="https://aazamkh5.github.io/drum-kit/." class="btn btn-light btn-lg">VIEW SITE</a>
+        <a  class="btn btn-light btn-lg">VIEW SITE</a>
       </div>
     </div>
   </div>
   
     <div class="wrappe b-3" >
-      <img src="images/todo.jpg" >
+     
     <div class="overlay">
       <div class="content">
-        <h2>TODOs  </h2>
-        <p>ReactJs/javascript</p>
-        <a href="https://pedantic-hypatia-cd4f53.netlify.app/" class="btn btn-light btn-lg">VIEW SITE</a>
+        <h2> </h2>
+        <p></p>
+        <a class="btn btn-light btn-lg">VIEW SITE</a>
       </div>
     </div>
   </div>
@@ -124,18 +211,13 @@
  
   
 </div>
- 
+  -->
 <!-- --------------------work end------------------------------ -->       
    
    
  
 <!-- =============================WHo am i & education -======== -->
-<div class="about-me" id="about-me">
-  <div class="profile">
-   <h2>Who Am I.</h2>
-   <p> A self taught web developer learned to code while working a regular job, freelance modeling and taking care of family.Passionate web designer, skilled in HTML, CSS. Creates seamless UX and UI with creative but functional designs. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time. I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease. </p>
-    </div>
-</div>
+
 
 
 
@@ -144,8 +226,8 @@
   
       
       <div class="edu">
-        <h3 class="text-center" style="color: #f1f1f1;padding-bottom: 5px;"> Education</h3>
-        <ul class="project">
+        <h3 class="text-center">Education</h3>
+        <ul class="degree">
           <li>
             <h4>MBA ( Master In Business Adminstration )</h4>
             <b>Major</b> - Marketing<br />
@@ -178,8 +260,8 @@
 
 
 
-<div class="contact" id="contact">
-  <div class="contact-container">
+<section class="contact">
+  
     <h2 class="text-center">Get In Touch</h2>
      
   
@@ -208,20 +290,24 @@
        </div>
 
       </div>
-      </div>  
-     </div>
+       
+</section>
+  
+     
     
   <!-- ===============contact detail end----------------- -->
+<footer>
+  <div class="footer" id="footer">
+    <div class="social-links text-center">
+      <a class="footer-link fab fa-facebook" href="https://www.facebook.com/aazamkhan86"></a>
+      <a class="footer-link fab fa-instagram" href="https://instagram.com/aazamkhan86"></a>
+      <a class="footer-link fab fa-linkedin-in" href="https://www.linkedin.com/in/azam-khan-8b01a82a/"></a>
+      <p class="copyright">© 2020 Azam khan.</p>
+    </div>
+    </div>
+</footer>
 
 
-<div class="footer" id="footer">
-<div class="social-links text-center">
-  <a class="footer-link fab fa-facebook" href="https://www.facebook.com/aazamkhan86"></a>
-  <a class="footer-link fab fa-instagram" href="https://instagram.com/aazamkhan86"></a>
-  <a class="footer-link fab fa-linkedin-in" href="https://www.linkedin.com/in/azam-khan-8b01a82a/"></a>
-  <p class="copyright">© 2020 Azam khan.</p>
-</div>
-</div>
 
 
   </body>
