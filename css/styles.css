@@ -235,9 +235,7 @@ margin-left: -21.5%;
     padding:0 .325em;
     
   }
-  /* .home-about-textbox{
-    margin-left: -21.5%;
-  } */
+  
  
 
 }
@@ -357,12 +355,12 @@ margin-left: -21.5%;
   padding: 6em 0;
 }
 .social-links{
-  padding: .5em;
+ margin:.5em;
 }
 
 .footer-link{
   color: #fff;
-  margin: 2em;
+  margin: .5em;
    text-decoration: none;
   list-style: none;
 }
@@ -370,32 +368,10 @@ margin-left: -21.5%;
   color:  #808080;
  
   } 
-  @media(min-width:25rem){
-    .footer-link{
-      
-      margin: .5em;
-      
-    
-    }
-
-    .footer-link:hover{
-      color:  #808080;
-     
-      } 
-
-  }
+  
  
   
 
-/* education ------ */
-/* ===================== */
-
-
-#education{
-  margin:0;
-  padding: 0;
-  background-color: ;
-}
 
 
 
